@@ -62,7 +62,15 @@ public class App {
 			 */	
 
 		private static void explodeMrMeeseeks(ArrayList<MrMeeseeks> setMrMe, Integer id) {
-			setMrMe.get(id-1001).sayMessageOnExplode();
+			
+			for (MrMeeseeks mrme : setMrMe){
+				
+				if( mrme.getId().equals(id)) {
+					mrme.sayMessageOnExplode();
+					setMrMe.remove(mrme);
+					break;
+				}
+			}
 			
 		}
 
