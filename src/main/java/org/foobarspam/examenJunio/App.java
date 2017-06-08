@@ -16,14 +16,6 @@ public class App {
 			ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
 			ArrayList <Integer> ids = new ArrayList<Integer>();
 			
-			for (int i = 0; i < 3; i++) {
-				setMrMe.add( new MrMeeseeks());
-			}
-			
-			for (MrMeeseeks mrmeeseek : setMrMe) {
-				ids.add(mrmeeseek.getId());
-			}
-			
 			// Crea una estructura de datos llamada setMrMe donde almacenar los Mr Meeseeks creados
 			// Crea una estructura de datos llamada ids donde almacenar los ids de los Mr Meeseeks creados
 			        

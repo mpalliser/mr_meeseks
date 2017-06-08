@@ -13,12 +13,16 @@ public class ProxyMrMeeseeks {
 		return mrmeeseek;
 	}
 
-	public void setMrMeeseek(MrMeeseeks mrmeeseek) {
-		this.mrmeeseek = mrmeeseek;
+	public void createMrMeeseeks(ArrayList<MrMeeseeks> mrMeeseeksList) {
+		
+		mrmeeseek = new MrMeeseeks();
+		mrMeeseeksList.add(mrmeeseek);
+		
 	}
 
-	public void pushButton(ArrayList<MrMeeseeks> mrMeeseeksList) {
-		setMrMeeseek(mrMeeseeksList.get(0));
+	public void pushButton(ArrayList<MrMeeseeks> mrMeList) {
+		
+		createMrMeeseeks(mrMeList);
 		mrmeeseek.sayMessageOnCreate();
 	}
 
