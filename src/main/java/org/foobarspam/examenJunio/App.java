@@ -26,16 +26,16 @@ public class App {
 			box.getMrMe().formulateRequest("Open", "stupid jar");
 			System.out.println();
 			
-//			box.pushButton(setMrMe);    
-//			System.out.println("I wanna be popular at school!");
-//			box.getMrMe().formulateRequest("Be", "popular at school");
-//			System.out.println();
-//			
-//			box.pushButton(setMrMe);
-//			System.out.println("I wanna be a more complete woman!");
-//			box.getMrMe().formulateRequest("Be", "a more complete woman");
-//			System.out.println();
-//			
+			box.pushButton(setMrMe);    
+			System.out.println("I wanna be popular at school!");
+			box.getMrMe().formulateRequest("Be", "popular at school");
+			System.out.println();
+			
+			box.pushButton(setMrMe);
+			System.out.println("I wanna be a more complete woman!");
+			box.getMrMe().formulateRequest("Be", "a more complete woman");
+			System.out.println();
+			
 //			System.out.println("Estos son los Mr Meeseeks creados:");
 //			listMrMeeseeks(setMrMe);
 //			System.out.println();
