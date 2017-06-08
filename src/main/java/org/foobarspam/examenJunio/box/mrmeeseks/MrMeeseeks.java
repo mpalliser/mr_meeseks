@@ -20,8 +20,7 @@ public class MrMeeseeks implements Doable{
 	}
 
 	public String doRequest(String accion, String objeto) {
-		// TODO Auto-generated method stub
-		return null;
+		return accion + objeto;
 	}
 	
 	
@@ -33,6 +32,10 @@ public class MrMeeseeks implements Doable{
 	
 		System.out.println(generateMessageOnRequest());
 	}
+	
+	public void sayMessageOnDone(String string, String string2) {
+		System.out.println(string + string2);
+	}
 
 	public String generateMessageOnRequest() {
 		
@@ -43,7 +46,10 @@ public class MrMeeseeks implements Doable{
 		
 		sayMessageOnRequest();
 		
+		System.out.println(doRequest(string, string2));
+		
 		
 	}
+	
 	
 }
