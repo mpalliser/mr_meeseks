@@ -61,19 +61,6 @@ public class App {
 			 * elimna del conjunto de Mr Meeseeks creados el que ya ha completado su cometido
 			 */	
 
-		private static void explodeMrMeeseeks(ArrayList<MrMeeseeks> setMrMe, Integer id) {
-			
-			for (MrMeeseeks mrme : setMrMe){
-				
-				if( mrme.getId().equals(id)) {
-					mrme.sayMessageOnExplode();
-					setMrMe.remove(mrme);
-					break;
-				}
-			}
-			
-		}
-
 		private static void listMrMeeseeks(ArrayList<MrMeeseeks> setMrMe) {
 			
 			for(MrMeeseeks mrme : setMrMe) {
@@ -86,7 +73,18 @@ public class App {
 			for(MrMeeseeks mrme : setMrMe) {
 				ids.add(mrme.getId());
 			}
+		}
+		
+		private static void explodeMrMeeseeks(ArrayList<MrMeeseeks> setMrMe, Integer id) {
 			
+			for (MrMeeseeks mrme : setMrMe){
+				//comprueba que la id de la array  coincide con un meeseeks listo para borrar.
+				if( mrme.getId().equals(id)) {
+					mrme.sayMessageOnExplode();
+					setMrMe.remove(mrme);
+					break;
+				}
+			}
 		}
 
 	}
