@@ -1,5 +1,10 @@
 package org.foobarspam.examenJunio;
 
+import java.util.ArrayList;
+
+import org.foobarspam.examenJunio.box.mrmeeseks.MrMeeseeks;
+import org.foobarspam.examenJunio.box.mrmeeseks.ProxyMrMeeseeks;
+
 /**
  * Hello world!
  *
@@ -8,6 +13,8 @@ public class App {
 		
 		public static void main( String[] args ){
 	        
+			ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
+			setMrMe.add( new MrMeeseeks());
 			// Crea una estructura de datos llamada setMrMe donde almacenar los Mr Meeseeks creados
 			// Crea una estructura de datos llamada ids donde almacenar los ids de los Mr Meeseeks creados
 			        
