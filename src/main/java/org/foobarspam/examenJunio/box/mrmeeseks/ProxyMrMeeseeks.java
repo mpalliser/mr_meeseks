@@ -4,21 +4,27 @@ import java.util.ArrayList;
 
 public class ProxyMrMeeseeks {
 	
-	private ArrayList<MrMeeseeks> mrMeeseeksList;
+	private MrMeeseeks mrmeeseek;
 	
-	ProxyMrMeeseeks () {
+	public ProxyMrMeeseeks () {
 	}
 	
-	public ArrayList<MrMeeseeks> getMrMeeseeksList() {
-		return mrMeeseeksList;
+	public MrMeeseeks getMrMeeseek() {
+		return mrmeeseek;
 	}
 
-	public void setMrMeeseeksList(ArrayList<MrMeeseeks> mrMeeseeksList) {
-		this.mrMeeseeksList = mrMeeseeksList;
+	public void setMrMeeseek(MrMeeseeks mrmeeseek) {
+		this.mrmeeseek = mrmeeseek;
 	}
 
 	public void pushButton(ArrayList<MrMeeseeks> mrMeeseeksList) {
-		setMrMeeseeksList(mrMeeseeksList);
+		setMrMeeseek(mrMeeseeksList.get(0));
+		mrmeeseek.sayMessageOnCreate();
+	}
+
+	public MrMeeseeks getMrMe() {
+		
+		return mrmeeseek;
 	}
 
 }
